@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagens</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/config.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <h1>Lista de países</h1>
+        </div>
+        <div class="campoPreencher">
+            <form action="#">
+                <fieldset class="field">
+                    <legend class="subtitulo">Cadastrar país</legend>
+                    <label class="texto" for="cadastro">Digite seu destino:</label>
+                    <input class="cadastro" type="text" name="cadastro" id="cadastro">
+                    
+                    <button class="botao" type="button" onclick="cadastrarPais()">Cadastrar</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="nav">
+            <h1>Países cadastrados</h1>
+        </div>
+        <section>
+            <div id="tabela">
+            </div>
+            <div class="atualizarTabela">
+                <button class="botao2" type="reset" name="atualizar" onclick="tabelaDePaises()">Atualizar Lista</button>
+            </div>
+        </section>
+        <div class="nav">
+            <h1>Remover país</h1>
+        </div>
+        <div class="campoPreencher">
+            <fieldset class="field">
+                <legend class="subtitulo">Remover país</legend>
+                <label class="texto" for="remover">Selecione o País a ser removido:</label>
+                <input class="cadastro" type="text" name="excluir" id="remover">
+                <button class="botao" type="button" onclick="removePais(this.value)">Remover</button>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>
